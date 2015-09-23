@@ -1,0 +1,82 @@
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.louisaseever.memberstatus.AddCustomActivity"
+    android:columnCount="2"
+    android:rowCount="8">
+
+    <TextView android:text="@string/custom_category_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customCategoryLabel"
+        android:inputType="none"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:gravity="left" />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customCategorySpinner"
+        android:layout_row="0"
+        android:layout_column="1" />
+
+    <TextView android:text="@string/custom_description_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customDescriptionLabel"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:gravity="left"
+        android:inputType="none" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/customDescription"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:gravity="left"
+        android:hint="@string/custom_description"
+        android:paddingLeft="20dp" />
+
+    <TextView android:text="@string/custom_points_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/customPointsLabel"
+        android:inputType="none"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:gravity="left" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/customPoints"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:gravity="left"
+        android:hint="@string/custom_zero"
+        android:paddingLeft="20dp"
+        android:inputType="number" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_save_button"
+        android:id="@+id/memberSaveButton"
+        android:onClick="onClickSave"
+        android:layout_row="3"
+        android:layout_column="1"
+        />
+</GridLayout>

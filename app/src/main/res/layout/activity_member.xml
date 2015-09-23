@@ -1,0 +1,139 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.louisaseever.memberstatus.MemberActivity"
+    android:columnCount="2"
+    android:rowCount="8">
+
+    <TextView android:text="@string/member_last_name_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/memberLastNameLabel"
+        android:inputType="none"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:gravity="left" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/memberLastName"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:gravity="left"
+        android:hint="@string/member_last_name_hint"
+        android:editable="true"
+        android:paddingLeft="20dp" />
+
+    <TextView android:text="@string/member_first_name_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/memberFirstNameLabel"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:gravity="left"
+        android:inputType="none" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/memberFirstName"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:gravity="left"
+        android:hint="@string/member_first_name_hint"
+        android:paddingLeft="20dp" />
+
+    <TextView android:text="@string/member_user_name_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/memberUserNameLabel"
+        android:inputType="none"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:gravity="left" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/memberUserName"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:gravity="left"
+        android:hint="@string/member_user_name_hint"
+        android:paddingLeft="20dp" />
+
+    <TextView android:text="@string/member_age_label" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/memberAgeLabel"
+        android:inputType="none"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:gravity="left" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/memberAge"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:gravity="left"
+        android:hint="@string/member_age_hint"
+        android:paddingLeft="20dp"
+        android:inputType="number" />
+
+    <TextView android:text="@string/member_points_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/memberPointsLabel"
+        android:inputType="none"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:gravity="left" />
+
+    <TextView android:text ="@string/member_points_zero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:id="@+id/memberPoints"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:gravity="left"
+        android:paddingLeft="20dp" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/member_view_acitivties_lable"
+        android:id="@+id/memberViewActivitiesButton"
+        android:onClick="onClickViewActivities"
+        android:layout_row="5"
+        android:layout_column="1"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/member_save_button_label"
+        android:id="@+id/memberSaveButton"
+        android:onClick="onClickSave"
+        android:layout_row="6"
+        android:layout_column="1"
+        />
+
+</GridLayout>
