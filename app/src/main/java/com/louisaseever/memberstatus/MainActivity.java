@@ -21,6 +21,9 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
+    /*********************************************
+     * Listens for user to click the Register button
+     */
     // OnClickListener
     private View.OnClickListener mMemberListener = new View.OnClickListener() {
         public void onClick(View v) {
