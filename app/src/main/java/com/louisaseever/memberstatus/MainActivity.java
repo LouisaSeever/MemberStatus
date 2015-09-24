@@ -50,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
     private TableLayout mMembersTable;
     private EditText mNewNameTextBox;
 
+    /**
+     * Populate the member table from the database
+     * @param savedInstanceState: state passed into main Activity
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
