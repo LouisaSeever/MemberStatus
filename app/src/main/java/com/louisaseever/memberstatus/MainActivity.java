@@ -72,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /***
+     * Handle return form registration or member edits
+     * @param requestCode: code identifying activity from which returning
+     * @param resultCode:  result returned from activity
+     * @param data:  data returned
+     */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
